@@ -11,34 +11,35 @@ header {
     height: 250px;
     width: 100%;
     margin-left: 10%;
-    display: relative;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0px; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0px; 
 }
 
 .diagonal {
     clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
     width: 700px;
     height: 200px;
-    display: inline-block;
 
 }
 
 .di-left {
     background-color: rgba($dgreen, 0.75);
+    grid-column: 1 / 2;
 }
 
 .di-right {
     background-color: rgba($dorange, 0.75);
-    margin-left: -285px; 
+    margin-left: -281px;
+    grid-column: 2 / 3; 
 }
 
 .title {
     font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     color: white;
-    left: 25%;
-    top: 105px;
+    left: 340px;
+    bottom: 140px; 
     z-index: 1;
     position: absolute;
 }
@@ -55,11 +56,14 @@ nav {
     display: flex;
     position: absolute;
     top: 165px;
-    left: 850px;
-    
+    left: 770px;
 }
 
 .navitem {
+    margin-left: 15px;
     text-decoration: none;
-    grid-column: 3 / 4;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
 }
