@@ -21,21 +21,23 @@ header {
   -webkit-clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
           clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
   width: 600px;
-}
-
-.di-left {
-  background-color: rgba(0, 142, 151, 0.75);
-  -ms-grid-column: 1;
-  grid-column: 1 / 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.di-left {
+  background-color: rgba(0, 142, 151, 0.75);
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
 }
 
 .di-right {
@@ -43,15 +45,6 @@ header {
   margin-left: -240px;
   -ms-grid-column: 2;
   grid-column: 2 / 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .title {
@@ -73,8 +66,10 @@ nav {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 7px;
-  padding-left: 40px;
+  padding-left: 60px;
 }
 
 .navitem {
@@ -86,14 +81,14 @@ nav {
   color: #FFF;
 }
 
-.navitem-1 {
+.navitem.navitem-1 {
   margin-left: 5px;
 }
 
 main {
   width: 800px;
   height: 70vh;
-  padding: 20px;
+  padding: 40px 250px 40px 40px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -108,12 +103,12 @@ aside {
   header {
     margin: 0;
     height: auto;
-    width: auto;
+    width: 100%;
     display: block;
   }
   .diagonal {
     width: auto;
-    height: 150px;
+    height: auto;
     -webkit-clip-path: none;
             clip-path: none;
   }
@@ -123,14 +118,26 @@ aside {
     display: block;
   }
   nav {
-    margin-left: 200px;
+    margin-left: 80px;
   }
   .title {
-    margin-left: 0;
+    margin-left: -100px;
   }
   main {
     width: 80vw;
     margin: 0 5%;
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    margin-left: auto;
+    width: 100%;
+  }
+  nav {
+    margin-left: 190px;
+    width: 100vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
