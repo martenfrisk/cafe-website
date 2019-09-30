@@ -8,7 +8,7 @@ $dorange : #FC4C02;
 }
 
 header {
-    height: 250px;
+    height: 200px;
     width: 100%;
     margin-left: 10vw;
     display: grid;
@@ -20,7 +20,6 @@ header {
 .diagonal {
     clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
     width: 600px;
-    height: 200px;
 }
 
 .di-left {
@@ -71,7 +70,11 @@ nav {
 }
 
 main {
-    width: 100px;
+    width: 800px;
+    padding: 20px;
+    border: 5px solid rgba($dgreen, 0.75);
+    border-radius: 20px;
+    margin-left: 20%;
 }
 
 aside {
@@ -81,17 +84,18 @@ aside {
 @media only screen and (max-width: 1000px) {
     header {
         margin: 0;
-        width: 100vw;
+        height: auto;
+        width: auto;
         display: block;
     }
     .diagonal {
-        width: 100vw;
+        width: auto;
         height: 150px;
         clip-path: none;
     }
     .di-right {
-        height: 60px;
         width: auto;
+        height: 20%;
         display: block;
     }
     nav {
@@ -99,5 +103,9 @@ aside {
     }
     .title {
         margin-left: 0;
+    }
+    main {
+        width: 80vw;
+        margin: 0 5%;
     }
 }
