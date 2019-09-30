@@ -59,6 +59,7 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 4em;
   color: white;
+  margin-left: 40px;
   text-transform: uppercase;
 }
 
@@ -114,6 +115,12 @@ aside {
     height: 60px;
     width: auto;
     display: block;
+  }
+  nav {
+    margin-left: 200px;
+  }
+  .title {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
