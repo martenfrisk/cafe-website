@@ -6,9 +6,9 @@
 }
 
 header {
-  height: 200px;
+  height: 150px;
   width: 100%;
-  margin-left: 10vw;
+  margin-left: 8vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -18,8 +18,8 @@ header {
 }
 
 .diagonal {
-  -webkit-clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
-          clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
+  -webkit-clip-path: polygon(0 0, 70% 0, 90% 100%, 20% 100%);
+          clip-path: polygon(0 0, 70% 0, 90% 100%, 20% 100%);
   width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ header {
 
 .di-right {
   background-color: rgba(252, 76, 2, 0.75);
-  margin-left: -240px;
+  margin-left: -181px;
   -ms-grid-column: 2;
   grid-column: 2 / 2;
 }
@@ -51,7 +51,6 @@ header {
   font-family: 'Montserrat', sans-serif;
   font-size: 4em;
   color: white;
-  margin-left: 40px;
   text-transform: uppercase;
 }
 
@@ -69,7 +68,6 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 7px;
-  padding-left: 60px;
 }
 
 .navitem {
@@ -86,20 +84,60 @@ nav {
 }
 
 main {
-  width: 800px;
-  height: 70vh;
+  width: 900px;
+  height: 75vh;
   padding: 40px 250px 40px 40px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin-left: 20vw;
+  margin-left: 15vw;
+  display: table;
+  /* fix this */
+}
+
+.menu {
+  margin: 20px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.menu-pic {
+  background-size: cover;
+  width: 55px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: 40% 100%;
+  display: inline-block;
+}
+
+.drink {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+}
+
+.drink-pic {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.4)), to(rgba(252, 76, 2, 0.4))), url("images/coffe-3.jpg");
+  background-image: linear-gradient(rgba(0, 142, 151, 0.4), rgba(252, 76, 2, 0.4)), url("images/coffe-3.jpg");
+}
+
+.food {
+  -ms-grid-column: 4;
+  grid-column: 4 / 4;
+}
+
+.food-pic {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.4)), to(rgba(252, 76, 2, 0.4))), url("images/sandwich-1.jpg");
+  background-image: linear-gradient(rgba(0, 142, 151, 0.4), rgba(252, 76, 2, 0.4)), url("images/sandwich-1.jpg");
 }
 
 aside {
   width: 100px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
   header {
     margin: 0;
     height: auto;
@@ -134,10 +172,12 @@ aside {
   .title {
     margin-left: auto;
     width: 100%;
+    margin-right: 15px;
   }
   nav {
     margin-left: 190px;
     width: 100vw;
+    padding-right: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

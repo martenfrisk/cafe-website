@@ -8,9 +8,9 @@ $dorange : #FC4C02;
 }
 
 header {
-    height: 200px;
+    height: 150px;
     width: 100%;
-    margin-left: 10vw;
+    margin-left: 8vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 0px; 
@@ -18,7 +18,7 @@ header {
 }
 
 .diagonal {
-    clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
+    clip-path: polygon(0 0, 70% 0, 90% 100%, 20% 100%);
     width: 600px;
     display: flex;
     align-items: flex-end;
@@ -33,19 +33,15 @@ header {
 
 .di-right {
     background-color: rgba($dorange, 0.75);
-    margin-left: -240px;
+    margin-left: -181px;
     grid-column: 2 / 2; 
-    // display: flex;
-    // align-items: flex-end;
-    // flex-wrap: wrap;
-    // justify-content: center;
 }
 
 .title {
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     color: white;
-    margin-left: 40px;
+    // margin-left: 0px;
     text-transform: uppercase;
 }
 
@@ -56,7 +52,7 @@ nav {
     align-items: flex-end;
     flex-wrap: wrap;
     padding-bottom: 7px;
-    padding-left: 60px;
+    // padding-left: 0px;
 }
 
 .navitem {
@@ -71,25 +67,63 @@ nav {
     }
 }
 
-
-
 main {
-    width: 800px;
-    height: 70vh; 
+    width: 900px;
+    height: 75vh; 
     padding: 40px 250px 40px 40px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
                 0 2px 2px rgba(0,0,0,0.1), 
                 0 4px 4px rgba(0,0,0,0.1), 
                 0 8px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
-    margin-left: 20vw;
+    margin-left: 15vw;
+    display: table; /* fix this */
+}
+
+.menu {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.menu-pic {
+    background-size: cover;
+    width: 55px;
+    height: 250px;
+    object-fit: cover;
+    background-position: 40% 100%;
+    display: inline-block;
+}
+
+.drink {
+    grid-column: 1 / 1;
+}
+
+.drink-pic {
+    background-image: 
+    linear-gradient(
+        rgba($dgreen, 0.4), 
+        rgba($dorange, 0.4)),
+    url('images/coffe-3.jpg');
+}
+
+.food {
+    grid-column: 4 / 4;
+}
+
+.food-pic {
+    background-image: 
+    linear-gradient(
+        rgba($dgreen, 0.4), 
+        rgba($dorange, 0.4)),
+    url('images/sandwich-1.jpg');
 }
 
 aside {
     width: 100px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
     header {
         margin: 0;
         height: auto;
@@ -124,9 +158,11 @@ aside {
     .title {
         margin-left: auto;
         width: 100%;
+        margin-right: 15px;
     }
     nav {
         margin-left: 190px;
         width: 100vw;
+        padding-right: 30px;
     }
 }
