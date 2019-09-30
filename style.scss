@@ -11,9 +11,9 @@ header {
     height: 250px;
     width: 100%;
     margin-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 0px;
+    /* display: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px; */
 }
 
 .diagonal {
@@ -24,21 +24,20 @@ header {
 
 .di-left {
     background-color: rgba($dgreen, 0.75);
-    grid-column: 2 / 3;
-    position: relative;
+    display: inline-block;
 }
 
 .di-right {
     background-color: rgba($dorange, 0.75);
-    margin-left: -281px;
-    grid-column: 3 / 4;
+    margin-left: -285px; 
+    display: inline-block;
 }
 
 .title {
     font-family: 'Quando', serif;
     font-size: 72px;
     color: white;
-    left: 29%;
+    left: 25%;
     top: 105px;
     z-index: 1;
     position: absolute;
@@ -50,4 +49,9 @@ main {
 
 aside {
     width: 100px;
+}
+
+.navitem {
+    text-decoration: none;
+    grid-column: 3 / 4;
 }

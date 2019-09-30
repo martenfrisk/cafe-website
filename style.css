@@ -9,11 +9,9 @@ header {
   height: 250px;
   width: 100%;
   margin-left: 10%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  grid-gap: 0px;
+  /* display: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px; */
 }
 
 .diagonal {
@@ -25,25 +23,20 @@ header {
 
 .di-left {
   background-color: rgba(0, 142, 151, 0.75);
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  position: relative;
+  display: inline-block;
 }
 
 .di-right {
   background-color: rgba(252, 76, 2, 0.75);
-  margin-left: -281px;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
+  margin-left: -285px;
+  display: inline-block;
 }
 
 .title {
   font-family: 'Quando', serif;
   font-size: 72px;
   color: white;
-  left: 29%;
+  left: 25%;
   top: 105px;
   z-index: 1;
   position: absolute;
@@ -55,5 +48,12 @@ main {
 
 aside {
   width: 100px;
+}
+
+.navitem {
+  text-decoration: none;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
 }
 /*# sourceMappingURL=style.css.map */
