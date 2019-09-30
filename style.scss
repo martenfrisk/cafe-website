@@ -21,13 +21,11 @@ header {
     clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
     width: 600px;
     height: 200px;
-
 }
 
 .di-left {
     background-color: rgba($dgreen, 0.75);
     grid-column: 1 / 1;
-    // display: flex;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -47,11 +45,6 @@ header {
     font-size: 4em;
     color: white;
     margin-left: 40px;
-    // left: 270px;
-    // top: 120px; 
-    // bottom: 10px;
-    // z-index: 1;
-    // position: relative;
     text-transform: uppercase;
 }
 
@@ -102,12 +95,9 @@ aside {
         display: block;
     }
     nav {
-        // left: 25%;
         margin-left: 200px;
     }
     .title {
-        // top: 80px;
-        // left: 25%;
         margin-left: 0;
     }
 }
