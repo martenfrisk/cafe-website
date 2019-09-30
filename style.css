@@ -9,8 +9,8 @@ header {
   height: 250px;
   width: 100%;
   margin-left: 10%;
-  /* display: relative;
-    grid-template-columns: repeat(2, 1fr);
+  display: relative;
+  /* grid-template-columns: repeat(2, 1fr);
     grid-gap: 0px; */
 }
 
@@ -19,17 +19,16 @@ header {
           clip-path: polygon(0 0, 60% 0, 90% 100%, 30% 100%);
   width: 700px;
   height: 200px;
+  display: inline-block;
 }
 
 .di-left {
   background-color: rgba(0, 142, 151, 0.75);
-  display: inline-block;
 }
 
 .di-right {
   background-color: rgba(252, 76, 2, 0.75);
   margin-left: -285px;
-  display: inline-block;
 }
 
 .title {
@@ -48,6 +47,15 @@ main {
 
 aside {
   width: 100px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 165px;
+  left: 850px;
 }
 
 .navitem {
