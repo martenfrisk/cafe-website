@@ -40,12 +40,13 @@ header {
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 72px;
+  font-size: 64px;
   color: white;
-  left: 340px;
+  left: 355px;
   bottom: 140px;
   z-index: 1;
   position: absolute;
+  text-transform: uppercase;
 }
 
 main {
