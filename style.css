@@ -83,16 +83,31 @@ nav {
   margin-left: 5px;
 }
 
+.navitem:hover {
+  border-bottom: 2px solid #fff;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.navitem:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
 main {
   width: 900px;
-  height: 75vh;
-  padding: 40px 250px 40px 40px;
+  height: auto;
+  padding: 50px 250px 40px 40px;
+  margin-left: 15vw;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin-left: 15vw;
-  display: table;
-  /* fix this */
+}
+
+.intro {
+  font-family: 'Quando';
+  font-size: 14px;
+  margin-bottom: 50px;
 }
 
 .menu {
@@ -163,7 +178,7 @@ aside {
   }
   main {
     width: 80vw;
-    margin: 0 5%;
+    margin: auto;
     padding: 40px;
   }
 }
@@ -178,6 +193,12 @@ aside {
     margin-left: 190px;
     width: 100vw;
     padding-right: 30px;
+  }
+  main {
+    margin: 0;
+    width: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

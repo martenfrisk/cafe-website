@@ -41,7 +41,6 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     color: white;
-    // margin-left: 0px;
     text-transform: uppercase;
 }
 
@@ -52,7 +51,6 @@ nav {
     align-items: flex-end;
     flex-wrap: wrap;
     padding-bottom: 7px;
-    // padding-left: 0px;
 }
 
 .navitem {
@@ -65,19 +63,31 @@ nav {
     &.navitem-1 {
         margin-left: 5px;
     }
+    &:hover {
+        border-bottom: 2px solid #fff;
+        transform: translateY(2px);
+    }
+    &:active {
+        transform: translateY(3px);
+    }
 }
 
 main {
     width: 900px;
-    height: 75vh; 
-    padding: 40px 250px 40px 40px;
+    height: auto; 
+    padding: 50px 250px 40px 40px;
+    margin-left: 15vw;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
                 0 2px 2px rgba(0,0,0,0.1), 
                 0 4px 4px rgba(0,0,0,0.1), 
                 0 8px 8px rgba(0,0,0,0.1);
     border-radius: 10px;
-    margin-left: 15vw;
-    display: table; /* fix this */
+}
+
+.intro {
+    font-family: 'Quando';
+    font-size: 14px;
+    margin-bottom: 50px;
 }
 
 .menu {
@@ -148,11 +158,10 @@ aside {
     }
     main {
         width: 80vw;
-        margin: 0 5%;
+        margin: auto;
         padding: 40px;
     }
 }
-
 
 @media only screen and (max-width: 400px) {
     .title {
@@ -164,5 +173,10 @@ aside {
         margin-left: 190px;
         width: 100vw;
         padding-right: 30px;
+    }
+    main {        
+        margin: 0;
+        width: auto;
+        box-shadow: none;
     }
 }
