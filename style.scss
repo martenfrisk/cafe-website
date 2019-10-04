@@ -1,5 +1,5 @@
-$dgreen : #008e97;
-$dorange : #FC4C02;
+$dgreen : rgba(#008e97, 0.75);
+$dorange : rgba(#FC4C02, 0.75);
 
 * {
     margin: 0;
@@ -31,12 +31,12 @@ header {
 }
 
 .di-left {
-    background-color: rgba($dgreen, 0.75);
+    background-color: $dgreen;
     grid-column: 1 / 1;
 }
 
 .di-right {
-    background-color: rgba($dorange, 0.75);
+    background-color: $dorange;
     margin-left: -181px;
     grid-column: 2 / 2; 
 }
@@ -80,7 +80,7 @@ main {
     width: 900px;
     height: auto; 
     grid-template-columns: 500px 100px;
-    grid-template-rows: 220px auto auto 400px;
+    grid-template-rows: 200px auto auto 400px;
     display: grid;
 
     padding: 40px;
@@ -159,8 +159,8 @@ main {
 .drink-pic {
     background-image: 
     linear-gradient(
-        rgba($dgreen, 0.4), 
-        rgba($dorange, 0.4)),
+        rgba($dgreen, 0.5), 
+        rgba($dorange, 0.5)),
     url('images/coffe-3.jpg');
 }
 
@@ -171,8 +171,8 @@ main {
 .food-pic {
     background-image: 
     linear-gradient(
-        rgba($dgreen, 0.4), 
-        rgba($dorange, 0.4)),
+        rgba($dgreen, 0.5), 
+        rgba($dorange, 0.5)),
     url('images/sandwich-1.jpg');
 }
 
@@ -231,8 +231,50 @@ aside {
                 0 8px 8px rgba(0,0,0,0.1);
 }
 
+.aside-header {
+    display: block;
+    padding: 15px 0px 5px 10px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.social-box {
+    & span {
+    background-color: $dgreen;
+    }
+    & img {
+        margin: 15px 0px 10px 10px;
+        width: 35px;
+        border-radius: 40%;
+        padding: 5px;
+        background-color: $dgreen;
+    }
+    & img:hover {
+        transform: scale(1.1);
+        transition: 0.1s ease-in-out;
+    }
+    & img:active {
+        transform: translateY(1px);
+    }
+}
+
+.location-map {
+    & span {
+        background-color: $dorange;
+
+    }
+    & img {
+    width: 300px;
+    height: auto;
+    }
+}
+
 video {
     width: 300px;
+    margin-top: 40px;
 }
 
 @media only screen and (max-width: 1075px) {
@@ -261,7 +303,7 @@ video {
         margin: auto;
         padding: 40px;
     }
-    aside {
+    aside video {
         display: none;
     }
     .drink {

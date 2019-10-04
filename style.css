@@ -104,8 +104,8 @@ main {
   height: auto;
   -ms-grid-columns: 500px 100px;
       grid-template-columns: 500px 100px;
-  -ms-grid-rows: 220px auto auto 400px;
-      grid-template-rows: 220px auto auto 400px;
+  -ms-grid-rows: 200px auto auto 400px;
+      grid-template-rows: 200px auto auto 400px;
   display: -ms-grid;
   display: grid;
   padding: 40px;
@@ -186,8 +186,8 @@ main {
 }
 
 .drink-pic {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.4)), to(rgba(252, 76, 2, 0.4))), url("images/coffe-3.jpg");
-  background-image: linear-gradient(rgba(0, 142, 151, 0.4), rgba(252, 76, 2, 0.4)), url("images/coffe-3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.5)), to(rgba(252, 76, 2, 0.5))), url("images/coffe-3.jpg");
+  background-image: linear-gradient(rgba(0, 142, 151, 0.5), rgba(252, 76, 2, 0.5)), url("images/coffe-3.jpg");
 }
 
 .food {
@@ -196,8 +196,8 @@ main {
 }
 
 .food-pic {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.4)), to(rgba(252, 76, 2, 0.4))), url("images/sandwich-1.jpg");
-  background-image: linear-gradient(rgba(0, 142, 151, 0.4), rgba(252, 76, 2, 0.4)), url("images/sandwich-1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 142, 151, 0.5)), to(rgba(252, 76, 2, 0.5))), url("images/sandwich-1.jpg");
+  background-image: linear-gradient(rgba(0, 142, 151, 0.5), rgba(252, 76, 2, 0.5)), url("images/sandwich-1.jpg");
 }
 
 .inspection-grade {
@@ -258,8 +258,52 @@ aside {
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
+.aside-header {
+  display: block;
+  padding: 15px 0px 5px 10px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.social-box span {
+  background-color: rgba(0, 142, 151, 0.75);
+}
+
+.social-box img {
+  margin: 15px 0px 10px 10px;
+  width: 35px;
+  border-radius: 40%;
+  padding: 5px;
+  background-color: rgba(0, 142, 151, 0.75);
+}
+
+.social-box img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.social-box img:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.location-map span {
+  background-color: rgba(252, 76, 2, 0.75);
+}
+
+.location-map img {
+  width: 300px;
+  height: auto;
+}
+
 video {
   width: 300px;
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 1075px) {
@@ -289,7 +333,7 @@ video {
     margin: auto;
     padding: 40px;
   }
-  aside {
+  aside video {
     display: none;
   }
   .drink {
