@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="style.css" class="css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Quando&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>ett café</title>
+    <title>Your Café</title>
 </head>
 <body>
     <header>
         <div class="diagonal di-left">
-            <div class="title">ett café</div>
+            <div class="title">Your Café</div>
         </div>
 
         <div class="diagonal di-right">
 
             <nav class="navbar">
                 <a href="#" class="link navitem navitem-1">
-                    meny
+                    menu
                 </a>
                 <a href="#" class="link navitem">
-                    hitta hit
+                    location
                 </a>
                 <a href="#" class="link navitem">
-                    kontakt
+                    contact
                 </a>
             </nav>
 
@@ -48,12 +48,13 @@
         </div>
 
         <div class="inspection-grade">
-            <embed src="docs/inspection-grade.pdf" type="application/pdf">
-
+            <input type="checkbox" id="view-pdf">
+                <label for="view-pdf" class="toggle-pdf">View Health Inspection Grade</label>
+                <embed src="docs/inspection-grade.pdf" type="application/pdf" class="inspection-pdf">
         </div>
         
         <aside>
-            <video controls>
+            <video autoplay muted>
                 <source src="images/video.mp4" type="video/mp4">
                     Your browser does not support this video. Consider installing Firefox or Chrome.
             </video>

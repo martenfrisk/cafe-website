@@ -138,6 +138,33 @@ main {
 .inspection-grade {
     grid-row: 3 / 3;
     grid-column: 1 / 1;
+    display: block;
+}
+
+input {
+    &[type="checkbox"] {
+    display: none;
+    }
+    &.toggle-pdf + .inspection-pdf {
+        display: none;
+    }
+    &:checked + .toggle-pdf + .inspection-pdf {
+        display: block;
+    }
+}
+
+.toggle-pdf:after {
+    content: ' (show)';
+}
+
+:checked + .toggle-pdf:after {
+    content:' (hide)';
+}
+
+.inspection-pdf {
+    width: 500px;
+    height: 300px;
+    display: none;
 }
 
 aside {
@@ -168,10 +195,7 @@ video {
         display: block;
     }
     nav {
-        margin-left: 80px;
-    }
-    .title {
-        margin-left: -100px;
+        margin-left: 160px;
     }
     main {
         width: 80vw;
