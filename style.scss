@@ -75,8 +75,8 @@ nav {
 main {
     width: 900px;
     height: auto; 
-    grid-template-columns: auto 100px;
-    grid-template-rows: auto auto 400px;
+    grid-template-columns: 500px 100px;
+    grid-template-rows: 240px auto auto 400px;
     display: grid;
 
     padding: 40px;
@@ -97,9 +97,11 @@ main {
 }
 
 .menu {
+    height: 280px;
     margin: 20px 0;
-    
     grid-row: 2 / 2;
+    display: grid;
+    grid-template-columns: 250px 250px;
 }
 
 .menu-pic {
@@ -111,8 +113,42 @@ main {
     display: inline-block;
 }
 
+.menu-header {
+    font-family: Montserrat, 'sans-serif';
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: lowercase;
+    color: #6C6E74;    
+    position: relative;
+    top: -260px;
+    left: 70px;
+}
+
+.menu-item {
+    font-family: Merriweather, 'sans-serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 40px;
+    text-transform: lowercase;
+    color: #000;
+    position: relative;
+    top: -260px;
+    left: 80px;
+}
+
+.menu-subcat {
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #7C7A7A;
+    position: relative;
+    left: 15px;
+}
+
 .drink {
     grid-column: 1 / 1;
+    position: relative;
 }
 
 .drink-pic {
@@ -124,7 +160,7 @@ main {
 }
 
 .food {
-    grid-column: 4 / 4;
+    grid-column: 2 / 2;
 }
 
 .food-pic {
@@ -136,7 +172,7 @@ main {
 }
 
 .inspection-grade {
-    grid-row: 3 / 3;
+    grid-row: 4 / 4;
     grid-column: 1 / 1;
     display: block;
 }
@@ -168,8 +204,11 @@ input {
 }
 
 aside {
-    grid-column: 3 / 3;
+    grid-column: 2 / 2;
     grid-row: 1 / 1;
+    position: relative;
+    left: 150px;
+    top: 30px;
 }
 
 video {
