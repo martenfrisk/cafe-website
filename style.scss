@@ -14,7 +14,7 @@ a {
 header {
     height: 150px;
     width: 100%;
-    padding-left: 8vw;
+    padding-left: 10vw;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 0px; 
@@ -77,27 +77,29 @@ nav {
 }
 
 main {
-    width: 900px;
+    width: 100vw;
     height: auto; 
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 200px auto auto 400px;
     display: grid;
-
-    padding: 40px;
-    margin-left: 15vw;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
-                0 2px 2px rgba(0,0,0,0.1), 
-                0 4px 4px rgba(0,0,0,0.1), 
-                0 8px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    padding-left: 18vw;
+    background-image: linear-gradient(to bottom, rgba(243, 255, 242, 0.719), #fff)
+    // margin-left: 15vw;
+    // box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    //             0 2px 2px rgba(0,0,0,0.1), 
+    //             0 4px 4px rgba(0,0,0,0.1), 
+    //             0 8px 8px rgba(0,0,0,0.1);
+    // border-radius: 10px;
 }
 
 .intro {
     font-family: 'Quando';
     font-size: 14px;
     height: 100px; 
+    width: 90%;
     margin-bottom: 50px;
     grid-row: 1 / 1;
+    padding: 40px 0px 0px 10px;
 }
 
 .menu {
@@ -183,37 +185,17 @@ main {
 }
 
 .inspection-pdf {
-    width: 500px;
+    width: 50%;
     height: 300px;
-    display: none;
     margin-top: 20px;
 }
 
-input {
-    &[type="checkbox"] {
-    display: none;
-    }
-    &.toggle-pdf + .inspection-pdf {
-        display: none;
-    }
-    &:checked + .toggle-pdf + .inspection-pdf {
-        display: block;
-    }
-}
-
-.toggle-pdf {
+.pdf-header {
     font-family: Montserrat, 'sans-serif';
     font-weight: bold;
     font-size: 24px;
     text-transform: lowercase;
     color: #6C6E74;
-    &:after {
-        content: ' ▼';
-    }  
-}
-
-:checked + .toggle-pdf:after {
-    content:' ▲';
 }
 
 aside {
@@ -264,10 +246,9 @@ aside {
 .location-map {
     & span {
         background-color: $dorange;
-
     }
     & img {
-    width: 300px;
+    width: 100%;
     height: auto;
     }
 }
@@ -277,9 +258,9 @@ video {
     margin-top: 40px;
 }
 
-@media only screen and (max-width: 1075px) {
+@media only screen and (max-width: 900px) {
     header {
-        margin: 0;
+        // margin: 0;
         height: auto;
         width: 100%;
         display: block;
@@ -287,58 +268,28 @@ video {
     }
     .diagonal {
         width: auto;
-        height: auto;
+        // height: auto;
         clip-path: none;
     }
     .di-right {
         width: auto;
         height: 20%;
-        display: block;
+        // display: block;
+        // margin-left: 0;
     }
     nav {
         margin-left: 160px;
     }
     main {
-        width: 80vw;
-        margin: auto;
-        padding: 40px;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: 90vw;
+        padding-left: 5vw;
+        margin: 0;
+        width: 100vw;
+        box-shadow: none;
     }
     .menu {
         grid-row: 3 / 3;
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    .title {
-        margin-left: auto;
-        width: 100%;
-        margin-right: 15px;
-    }
-    nav {
-        margin-left: 190px;
-        width: 100vw;
-        padding-right: 30px;
-    }
-    .intro {
-        display: block;
-        height: auto;
-    }
-    main {        
-        margin: 0;
-        width: auto;
-        box-shadow: none;
-    }    
-    aside {
-        grid-column: 1 / 1;
-        grid-row: 2 / 2;
-        display: block;
-        height: auto;
-        width: auto;
-        top: 0;
-        left: 0;
-        & video {
-        display: none;
-        }
     }
     .drink {
         grid-row: 1 / 1;
@@ -349,6 +300,29 @@ video {
         grid-column: 1 / 1;
     }
     .inspection-grade {
-        grid-row: 5 / 5;
+        position: relative;
+        top: 250px;
+        grid-row: 4 / 4;
     }
+    .intro {
+        display: block;
+        height: auto;
+    }
+    aside {
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+        display: block;
+        height: auto;
+        width: auto;
+        top: 0;
+        left: 0;
+        & video {
+            display: none;
+        }
+    }
+    .inspection-pdf {
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+}
 }
