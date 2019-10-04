@@ -270,6 +270,11 @@ aside {
           transform: translateY(1px);
 }
 
+.location-map {
+  bottom: -5px;
+  position: relative;
+}
+
 .location-map span {
   background-color: rgba(252, 76, 2, 0.75);
 }
@@ -367,6 +372,15 @@ video {
   main {
     -ms-grid-columns: 90vw;
         grid-template-columns: 90vw;
+  }
+  .social-box span {
+    display: inline;
+    padding-right: 10px;
+  }
+  .social-box img {
+    margin: 0 5px;
+    position: relative;
+    top: 5px;
   }
   .menu {
     top: 50px;

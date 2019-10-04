@@ -244,6 +244,8 @@ aside {
 }
 
 .location-map {
+    bottom: -5px;
+    position: relative;
     & span {
         background-color: $dorange;
     }
@@ -336,6 +338,17 @@ video {
 @media only screen and (max-width: 670px) {
     main {
         grid-template-columns: 90vw;
+    }
+    .social-box {
+        & span {
+        display: inline;
+        padding-right: 10px;
+        }
+        & img {
+            margin: 0 5px;
+            position: relative;
+            top: 5px;
+        }
     }
     .menu {
         top: 50px;
