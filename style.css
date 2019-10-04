@@ -8,7 +8,7 @@
 header {
   height: 150px;
   width: 100%;
-  margin-left: 8vw;
+  padding-left: 8vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -97,7 +97,13 @@ nav {
 main {
   width: 900px;
   height: auto;
-  padding: 50px 250px 40px 40px;
+  -ms-grid-columns: auto 100px;
+      grid-template-columns: auto 100px;
+  -ms-grid-rows: auto auto 400px;
+      grid-template-rows: auto auto 400px;
+  display: -ms-grid;
+  display: grid;
+  padding: 40px;
   margin-left: 15vw;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1);
@@ -107,15 +113,16 @@ main {
 .intro {
   font-family: 'Quando';
   font-size: 14px;
+  height: 100px;
   margin-bottom: 50px;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
 }
 
 .menu {
   margin: 20px 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
 }
 
 .menu-pic {
@@ -149,9 +156,10 @@ main {
 }
 
 aside {
-  position: absolute;
-  top: 250px;
-  left: 1000px;
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
 }
 
 video {
@@ -164,6 +172,7 @@ video {
     height: auto;
     width: 100%;
     display: block;
+    padding-left: 0;
   }
   .diagonal {
     width: auto;
@@ -186,6 +195,9 @@ video {
     width: 80vw;
     margin: auto;
     padding: 40px;
+  }
+  aside {
+    display: none;
   }
 }
 
