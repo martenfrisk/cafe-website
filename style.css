@@ -205,6 +205,8 @@ main {
   -ms-grid-column: 1;
   grid-column: 1 / 1;
   display: block;
+  position: relative;
+  top: 200px;
 }
 
 .inspection-pdf {
@@ -339,7 +341,7 @@ video {
   }
   .inspection-grade {
     position: relative;
-    top: 250px;
+    top: 350px;
     -ms-grid-row: 4;
     grid-row: 4 / 4;
   }
