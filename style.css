@@ -224,9 +224,9 @@ main {
 }
 
 .pdf-header img {
-  width: 30px;
+  width: 20px;
   position: relative;
-  top: 50%;
+  left: 5px;
 }
 
 .pdf-header a:visited {
@@ -386,13 +386,16 @@ video {
         grid-template-columns: 90vw;
   }
   .social-box span {
-    display: inline;
+    display: inline-block;
     padding-right: 10px;
   }
   .social-box img {
     margin: 0 5px;
     position: relative;
     top: 5px;
+  }
+  .location-map span {
+    display: block;
   }
   .menu {
     top: 50px;
@@ -402,6 +405,9 @@ video {
     grid-column: 1 / 1;
     -ms-grid-row: 2;
     grid-row: 2 / 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 70vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
