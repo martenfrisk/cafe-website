@@ -74,7 +74,7 @@ nav > button:active {
   transform: translateY(3px);
   color: #FFF;
 }
-nav > buttona, nav > button :visited {
+nav > buttona, nav > button :visited, nav > button :link {
   color: #FFF;
 }
 
@@ -346,3 +346,5 @@ video {
     width: 70vw;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

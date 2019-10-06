@@ -77,7 +77,7 @@ nav > button {
         transform: translateY(3px);
         color: #FFF;
     }
-    &a, :visited {
+    &a, :visited, :link {
         color: #FFF;
     }
 }
@@ -195,7 +195,7 @@ main {
         position: relative;
         left: 5px;
     }
-    & a, a:visited{
+    & a, a:visited {
         color: $textgrey;
     }
 }
