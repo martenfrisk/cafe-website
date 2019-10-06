@@ -47,6 +47,7 @@ header {
     font-size: 4em;
     color: white;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 nav {
@@ -139,6 +140,7 @@ main {
 }
 
 .menu-subcat {
+    display: inline;
     font-size: 16px;
     line-height: 23px;
     text-transform: uppercase;

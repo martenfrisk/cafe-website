@@ -12,7 +12,11 @@
 <body>
     <header>
         <div class="diagonal di-left">
-            <a href="index.html"><div class="title">Your Café</div></a>
+                <a href="index.html">
+                    <h1 class="title">
+                        Your Café
+                    </h1>
+                </a>
         </div>
 
         <div class="diagonal di-right">
@@ -40,10 +44,15 @@
                 <p>
                 There are some other great places for coffee in the city that we want to share with you: New York's top coffee spot, Coffee & Tea Republic; Costa Rica's best coffee shop, Espacio San Pedro; and San Francisco's most beloved coffee spots, Espresso Del Mar and Cafe Cozy.</p>
         </div>
-        <div class="menu"><a id="menu"></a>
+        <div class="menu">
             <div class="drink">
-                <div class="menu-pic drink-pic"></div>
-                    <div class="menu-header">To drink</div>
+                <div>
+                    <span class="menu-pic drink-pic" role="img" aria-label="Picture of coffee cup"></span>
+                    <!--
+                        Empty span to put aria-label on image
+                    -->
+                </div>
+                    <h2 class="menu-header">To drink</h2>
                     <div class="menu-item">
                         <p>Cappuccino</p>
                         <p>Brewed coffee</p>
@@ -53,14 +62,19 @@
             </div>
 
             <div class="food">
-                <div class="menu-pic food-pic"></div>
-                    <div class="menu-header">To eat</div>
+                <div>
+                    <span class="menu-pic food-pic" role="img" aria-label="Picture of sandwich"></span>
+                    <!--
+                        Empty span to put aria-label on image
+                    -->
+                </div>
+                    <h2 class="menu-header">To eat</h2>
                     <div class="menu-item">
                         <p>Subs</p>
-                            <div class="menu-subcat">
+                            <h3 class="menu-subcat">
                                 <p>BLT</p>
                                 <p>Club</p>
-                            </div>
+                            </h3>
                         <p>Cinnamon bun</p>
                         <p>Croissant</p>
                     </div>
@@ -68,14 +82,14 @@
         </div>
 
         <div class="inspection-grade">
-                <div class="pdf-header">
-                    <a href="docs/inspection-grade.pdf" target="_blank">
+                <h2 class="pdf-header">
+                    <a href="docs/inspection-grade.pdf" target="_blank" title="Open file in new tab">
                         Health Inspection Grade&nbsp;<img 
-                        src="images/external-link-icon.png" 
-                        alt="Open in new tab" 
+                        src="images/external-link-icon.png"
+                        alt="" 
                         />
                     </a>
-                </div>
+                </h2>
 
                 <embed 
                     src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://martenfrisk.github.io/cafe-website/docs/inspection-grade.pdf"
