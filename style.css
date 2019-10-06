@@ -229,7 +229,7 @@ main {
   left: 5px;
 }
 
-.pdf-header a:visited {
+.pdf-header a, .pdf-header a:visited {
   color: #6C6E74;
 }
 

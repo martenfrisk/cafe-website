@@ -198,7 +198,7 @@ main {
         position: relative;
         left: 5px;
     }
-    & a:visited{
+    & a, a:visited{
         color: $textgrey;
     }
 }
