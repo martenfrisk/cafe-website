@@ -1,5 +1,6 @@
 $dgreen : rgba(#008e97, 0.75);
 $dorange : rgba(#FC4C02, 0.75);
+$textgrey : #6C6E74;
 
 * {
     margin: 0;
@@ -7,7 +8,7 @@ $dorange : rgba(#FC4C02, 0.75);
     box-sizing: border-box;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
 }
 
@@ -79,7 +80,7 @@ nav {
 main {
     width: 100vw;
     height: auto; 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 700px 1fr;
     grid-template-rows: 200px auto auto 400px;
     display: grid;
     padding-left: 18vw;
@@ -124,7 +125,7 @@ main {
     font-weight: bold;
     font-size: 36px;
     text-transform: lowercase;
-    color: #6C6E74;    
+    color: $textgrey;    
     position: relative;
     top: -260px;
     left: 70px;
@@ -183,7 +184,7 @@ main {
     grid-column: 1 / 1;
     display: block;
     position: relative;
-    top: 200px;
+    top: 100px;
 }
 
 .inspection-pdf {
@@ -197,7 +198,15 @@ main {
     font-weight: bold;
     font-size: 24px;
     text-transform: lowercase;
-    color: #6C6E74;
+    color: $textgrey;
+    & img {
+        width: 30px;
+        position: relative;
+        top: 50%;
+    }
+    & a:visited{
+        color: $textgrey;
+    }
 }
 
 aside {

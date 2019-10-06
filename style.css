@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -101,8 +101,8 @@ nav {
 main {
   width: 100vw;
   height: auto;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 700px 1fr;
+      grid-template-columns: 700px 1fr;
   -ms-grid-rows: 200px auto auto 400px;
       grid-template-rows: 200px auto auto 400px;
   display: -ms-grid;
@@ -206,7 +206,7 @@ main {
   grid-column: 1 / 1;
   display: block;
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 .inspection-pdf {
@@ -220,6 +220,16 @@ main {
   font-weight: bold;
   font-size: 24px;
   text-transform: lowercase;
+  color: #6C6E74;
+}
+
+.pdf-header img {
+  width: 30px;
+  position: relative;
+  top: 50%;
+}
+
+.pdf-header a:visited {
   color: #6C6E74;
 }
 
