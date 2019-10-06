@@ -23,15 +23,21 @@
     <div class="diagonal di-right">
 
         <nav class="navbar">
-            <a href="#menu" class="link navitem navitem-1">
-                menu
-            </a>
-            <a href="#" class="link navitem">
-                our story
-            </a>
-            <a href="#" class="link navitem">
-                contact
-            </a>
+            <button class="link navitem navitem-1">
+                <a href="#menu">
+                    menu
+                </a>
+            </button> 
+            <button class="link navitem">
+                <a href="#">
+                    our story
+                </a>
+            </button>
+            <button class="link navitem">
+                <a href="#">
+                    contact
+                </a>
+            </button>
         </nav>
 
     </div>
@@ -49,9 +55,7 @@
     <section class="menu">
         <div class="drink">
                 <span class="menu-pic drink-pic" role="img" aria-label="Picture of coffee cup"></span>
-                <!--
-                    Empty span to put aria-label on image
-                -->
+                <!-- Empty span to put aria-label on image -->
             <h2 class="menu-header">To drink</h2>
                 <ul>
                     <li>Cappuccino</li>
@@ -63,9 +67,7 @@
 
         <div class="food">
                 <span class="menu-pic food-pic" role="img" aria-label="Picture of sandwich"></span>
-                <!--
-                    Empty span to put aria-label on image
-                -->
+                <!-- Empty span to put aria-label on image -->
                 <h2 class="menu-header">To eat</h2>
                     <ul>
                     <li>Subs</li>
@@ -119,7 +121,7 @@
         <video controls muted poster="images/coffee-video-poster-1.png">
             <source src="images/coffee-video-1.mp4" type="video/mp4">
                 Your browser does not support this video. Consider installing Firefox or Chrome or download the video <a href="images/coffee-video-1.mp4" target="_blank">here</a>.
-            <track label="Text description" kind="captions" srclang="en" src="caption-coffee-video.vtt">
+            <track label="Text description in English" kind="descriptions" srclang="en" src="caption-coffee-video.vtt"> <!-- Track for screen reader with caption describing video content-->
         </video>
     </aside>
 </main>

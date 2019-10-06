@@ -62,10 +62,10 @@ nav {
 .navitem {
     margin-left: 15px;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font: 700 24px 'Montserrat', sans-serif;
     color: #FFF;
+    background-color: inherit;
+    border: 0;
     &.navitem-1 {
         margin-left: 5px;
     }
@@ -75,6 +75,9 @@ nav {
     }
     &:active {
         transform: translateY(3px);
+    }
+    &:visited, :link {
+        color: #FFF;
     }
 }
 
@@ -125,8 +128,9 @@ main {
 }
 
 .menu-header {
-    font-family: Montserrat, 'sans-serif';
+    font-weight: 700;
     font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
     text-transform: lowercase;
     color: $textgrey;
     position: relative;
@@ -135,9 +139,7 @@ main {
 }
 
 .menu li {
-    font-family: Merriweather, 'sans-serif';
-    font-weight: bold;
-    font-size: 22px;
+    font: bold 22px 'Merriweather', sans-serif;
     line-height: 50px;
     text-transform: lowercase;
     position: relative;
@@ -154,12 +156,6 @@ main {
     margin-left: 10px;
 }
 
-// .drink {
-//     grid-column: 1 / 1;
-//     position: relative;
-//     height: inherit;
-// }
-
 .drink-pic {
     background-image: 
     linear-gradient(
@@ -167,10 +163,6 @@ main {
         rgba($dorange, 0.5)),
     url('images/coffe-3.jpg');
 }
-
-// .food {
-//     grid-column: 2 / 2;
-// }
 
 .food-pic {
     background-image: 
