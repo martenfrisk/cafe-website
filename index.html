@@ -10,118 +10,119 @@
     <title>Your Café</title>
 </head>
 <body>
-    <header>
-        <div class="diagonal di-left">
-                <a href="index.html">
-                    <h1 class="title">
-                        Your Café
-                    </h1>
-                </a>
-        </div>
-
-        <div class="diagonal di-right">
-
-            <nav class="navbar">
-                <a href="#menu" class="link navitem navitem-1">
-                    menu
-                </a>
-                <a href="#" class="link navitem">
-                    our story
-                </a>
-                <a href="#" class="link navitem">
-                    contact
-                </a>
-            </nav>
-
-        </div>
-    </header>
     
-    <main>
-        
-        <div class="intro">
-                <p>Do you like coffee? Welcome to Your Café - bring all your friends! And do you like tea? We've got it all! We're top provider of specialty tea and coffee!</p>
-                <br />
-                <p>
-                There are some other great places for coffee in the city that we want to share with you: New York's top coffee spot, Coffee & Tea Republic; Costa Rica's best coffee shop, Espacio San Pedro; and San Francisco's most beloved coffee spots, Espresso Del Mar and Cafe Cozy.</p>
-        </div>
-        <div class="menu">
-            <div class="drink">
-                <div>
-                    <span class="menu-pic drink-pic" role="img" aria-label="Picture of coffee cup"></span>
-                    <!--
-                        Empty span to put aria-label on image
-                    -->
-                </div>
-                    <h2 class="menu-header">To drink</h2>
-                    <div class="menu-item">
-                        <p>Cappuccino</p>
-                        <p>Brewed coffee</p>
-                        <p>Latte</p>
-                        <p>Tea</p>
-                    </div>
-            </div>
+<header>
+    <div class="diagonal di-left">
+            <a href="index.html">
+                <h1 class="title">
+                    Your Café
+                </h1>
+            </a>
+    </div>
 
-            <div class="food">
-                <div>
-                    <span class="menu-pic food-pic" role="img" aria-label="Picture of sandwich"></span>
-                    <!--
-                        Empty span to put aria-label on image
-                    -->
-                </div>
-                    <h2 class="menu-header">To eat</h2>
-                    <div class="menu-item">
-                        <p>Subs</p>
-                            <h3 class="menu-subcat">
-                                <p>BLT</p>
-                                <p>Club</p>
-                            </h3>
-                        <p>Cinnamon bun</p>
-                        <p>Croissant</p>
-                    </div>
-            </div>
-        </div>
+    <div class="diagonal di-right">
 
-        <div class="inspection-grade">
-                <h2 class="pdf-header">
-                    <a href="docs/inspection-grade.pdf" target="_blank" title="Open file in new tab">
-                        Health Inspection Grade&nbsp;<img 
-                        src="images/external-link-icon.png"
-                        alt="" 
-                        />
-                    </a>
-                </h2>
+        <nav class="navbar">
+            <a href="#menu" class="link navitem navitem-1">
+                menu
+            </a>
+            <a href="#" class="link navitem">
+                our story
+            </a>
+            <a href="#" class="link navitem">
+                contact
+            </a>
+        </nav>
 
-                <embed 
-                    src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://martenfrisk.github.io/cafe-website/docs/inspection-grade.pdf"
-                    type="application/pdf" 
-                    class="inspection-pdf"
-                > 
-                <!-- Google Drive PDF for Chrome Mobile (Android) compability -->
+    </div>
+</header>
+
+<main>
+    
+    <section class="intro">
+            <p>Do you like coffee? Welcome to Your Café - bring all your friends! And do you like tea? We've got it all! We're top provider of specialty tea and coffee!</p>
+            <br />
+            <p>
+            There are some other great places for coffee in the city that we want to share with you: New York's top coffee spot, Coffee & Tea Republic; Costa Rica's best coffee shop, Espacio San Pedro; and San Francisco's most beloved coffee spots, Espresso Del Mar and Cafe Cozy.</p>
+    </section>
+
+    <section class="menu">
+        <div class="drink">
+                <span class="menu-pic drink-pic" role="img" aria-label="Picture of coffee cup"></span>
+                <!--
+                    Empty span to put aria-label on image
+                -->
+            <h2 class="menu-header">To drink</h2>
+                <ul>
+                    <li>Cappuccino</li>
+                    <li>Brewed coffee</li>
+                    <li>Latte</li>
+                    <li>Tea</li>
+                </ul>
         </div>
 
-        <aside>
-            <div class="social-box">
-                <span class="aside-header">Follow us</span>
-                    <a href="#/">
-                        <img src="images/social_twitter.png" alt="Twitter icon">
-                    </a>
-                    <a href="#/">
-                        <img src="images/social_instagram.png" alt="Instagram icon">
-                    </a>
-                    <a href="#/">
-                        <img src="images/social_facebook.png" alt="Facebook icon">
-                    </a>
+        <div class="food">
+                <span class="menu-pic food-pic" role="img" aria-label="Picture of sandwich"></span>
+                <!--
+                    Empty span to put aria-label on image
+                -->
+                <h2 class="menu-header">To eat</h2>
+                    <ul>
+                    <li>Subs</li>
+                        <ul class="menu-subcat">
+                            <li>BLT</li>
+                            <li>Club</li>
+                        </ul>
+                    </li>
+                    <li>Cinnamon bun</li>
+                    <li>Croissant</li>
+                </ul>
+        </div>
+    </section>
 
-            </div>
-            <div class="location-map">
-                <span class="aside-header">Find us</span>
-                <img src="images/map-location_1.png" alt="Map indicating location of establishment">
-            </div>
-            <video controls muted>
-                <source src="images/video.mp4" type="video/mp4">
-                    Your browser does not support this video. Consider installing Firefox or Chrome.
-            </video>
-        </aside>
-    </main>
+    <section class="inspection-grade">
+            <h2 class="pdf-header">
+                <a href="docs/inspection-grade.pdf" target="_blank" title="Open file in new tab">
+                    Health Inspection Grade&nbsp;<img 
+                    src="images/external-link-icon.png"
+                    alt="Icon indicating that the link opens in new window" 
+                    />
+                </a>
+            </h2>
+
+            <embed 
+                src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://martenfrisk.github.io/cafe-website/docs/inspection-grade.pdf"
+                type="application/pdf" 
+                class="inspection-pdf"
+            > 
+            <!-- Google Drive PDF for Chrome Mobile (Android) compability -->
+    </section>
+
+    <aside>
+        <div class="social-box">
+            <span class="aside-header">Follow us</span>
+                <a href="#/">
+                    <img src="images/social_twitter.png" alt="Twitter icon">
+                </a>
+                <a href="#/">
+                    <img src="images/social_instagram.png" alt="Instagram icon">
+                </a>
+                <a href="#/">
+                    <img src="images/social_facebook.png" alt="Facebook icon">
+                </a>
+
+        </div>
+        <div class="location-map">
+            <span class="aside-header">Find us</span>
+            <img src="images/map-location_1.png" alt="Map indicating location of establishment">
+        </div>
+        <video controls muted poster="images/coffee-video-poster-1.png">
+            <source src="images/coffee-video-1.mp4" type="video/mp4">
+                Your browser does not support this video. Consider installing Firefox or Chrome or download the video <a href="images/coffee-video-1.mp4" target="_blank">here</a>.
+            <track label="Text description" kind="captions" srclang="en" src="caption-coffee-video.vtt">
+        </video>
+    </aside>
+</main>
+
 </body>
 </html>
