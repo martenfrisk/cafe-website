@@ -59,7 +59,7 @@ nav {
     padding-bottom: 7px;
 }
 
-nav > button {
+nav > a {
     margin-left: 15px;
     text-decoration: none;
     font: 700 24px 'Montserrat', sans-serif;
@@ -150,6 +150,8 @@ main {
 
 .menu-subcat li {
     display: block;
+    top: 0px;
+    left: 0px;
     font-size: 16px;
     line-height: 23px;
     text-transform: uppercase;

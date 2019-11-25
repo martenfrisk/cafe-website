@@ -75,7 +75,7 @@ nav {
   padding-bottom: 7px;
 }
 
-nav > button {
+nav > a {
   margin-left: 15px;
   text-decoration: none;
   font: 700 24px 'Montserrat', sans-serif;
@@ -84,23 +84,23 @@ nav > button {
   border: 0;
 }
 
-nav > button.navitem-1 {
+nav > a.navitem-1 {
   margin-left: 6px;
 }
 
-nav > button:hover {
+nav > a:hover {
   border-bottom: 2px solid #fff;
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }
 
-nav > button:active {
+nav > a:active {
   -webkit-transform: translateY(3px);
           transform: translateY(3px);
   color: #FFF;
 }
 
-nav > buttona, nav > button :visited, nav > button :link {
+nav > aa, nav > a :visited, nav > a :link {
   color: #FFF;
 }
 
@@ -180,6 +180,8 @@ main {
 
 .menu-subcat li {
   display: block;
+  top: 0px;
+  left: 0px;
   font-size: 16px;
   line-height: 23px;
   text-transform: uppercase;
